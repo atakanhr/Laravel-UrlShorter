@@ -15,7 +15,7 @@ class LinkController extends Controller
         ]);
 
         if ($validator->fails()) {
-            return redirect('shorter/')
+            return redirect('/')
                         ->withErrors($validator)
                         ->withInput();
         }
@@ -26,7 +26,7 @@ class LinkController extends Controller
             $exist = link::where('url','=',$url);
             if($exist ->count()===1){
                 $code = $exist->first()->code;
-                return redirect('shorter/')->with('global',url("/shorter/{$code}"));
+                return redirect('/')->with('global',url("/{$code}"));
             }
             else{
                 $created =  link::create(array(
@@ -44,9 +44,9 @@ class LinkController extends Controller
                 }
                 if($code){
                     //redirect home
-                    return redirect('shorter/')->with('global',url("/shorter/{$code}"));
+                    return redirect('/')->with('global',url("/{$code}"));
                 }
-                return redirect('shorter/')->with('global','Something was wrong');
+                return redirect('/')->with('global','Something was wrong');
             }
 
 
