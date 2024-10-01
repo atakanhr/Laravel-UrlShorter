@@ -1,45 +1,73 @@
-<p align="center"><img src="https://res.cloudinary.com/dtfbvvkyp/image/upload/v1566331377/laravel-logolockup-cmyk-red.svg" width="400"></p>
 
-<p align="center">
-<a href="https://travis-ci.org/laravel/framework"><img src="https://travis-ci.org/laravel/framework.svg" alt="Build Status"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/d/total.svg" alt="Total Downloads"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/v/stable.svg" alt="Latest Stable Version"></a>
-<a href="https://packagist.org/packages/laravel/framework"><img src="https://poser.pugx.org/laravel/framework/license.svg" alt="License"></a>
-</p>
+---
 
-## PROJE HAKKINDA
+## ABOUT THE PROJECT
 
-Projemizin amacı laravel ile url kısaltıcı oluşturmaktır.
+The objective of this project is to create a URL shortener using Laravel.
 
+---
 
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
+### Laravel Version
 
-## KURULUM
-1-)Projeyi indirin
+This project utilizes Laravel version 6.2. Since this is an older version of Laravel, certain requirements must be met in the development environment.
 
-    git clone https://github.com/atakanhr/webdev-simpleprojects.git
+#### Requirements
 
-2-)Vendor dosyaları için composer ile kurulum yapın
-    
-    composer install
-3-).env dosyasında veritabanı ayarlarınızı yapın. Yazılım veritabanı kullanmaktadır //.env dosyası projede yoktur onun yerine default dosyanın adını direk .env yapıp düzenleyin.
+- **PHP**: 7.2
+- **Composer**: 2.2
 
+---
 
-4-)Veritabanı için yarattığımız kodları migrate edin
+## MANUAL INSTALLATION
 
-    php artisan migrate:install
-5-)Projeyi çalıştırın
-    
-    php artisan serve
-6-)/urlshort sorgusu ile ulaşabilirsiniz. Örn: http://localhost.com/webdev-simpleprojects/urlshorter/shorter
+1. Clone the project repository:
 
+   ```bash
+   git clone https://github.com/atakanhr/webdev-simpleprojects.git
+   ```
 
-## Resimler
+2. Install the vendor files using Composer:
 
-![resim1](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image1.PNG)
-![resim2](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image2.PNG)
-![resim3](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image3.PNG)
+   ```bash
+   composer install
+   ```
 
+3. Copy the `.env.example` file and create a new file named `.env`.
 
-## Teşekkürler
-[EMİR (CSS)](https://github.com/emirkivrak)
+4. Generate the application secret key and add it to the `.env` file using the following command:
+
+   ```bash
+   php artisan key:generate
+   ```
+
+5. Configure your database settings in the `.env` file. The application requires a database.
+
+6. Migrate the database tables:
+
+   ```bash
+   php artisan migrate
+   ```
+
+7. Start the project:
+
+   ```bash
+   php artisan serve
+   ```
+
+8. You can access the application at `/urlshort`. For example: [http://localhost:8000/urlshort](http://localhost:8000/urlshort)
+
+---
+
+## IMAGES
+
+![Image 1](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image1.PNG)
+![Image 2](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image2.PNG)
+![Image 3](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image3.PNG)
+
+---
+
+## THANK YOU
+
+Special thanks to [EMİR (CSS)](https://github.com/emirkivrak) for their contributions.
+
+---
