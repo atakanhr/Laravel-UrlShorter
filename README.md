@@ -95,6 +95,6 @@ To use the Docker setup, extract the `auto-deployment` folder from the project a
 
 ## IMAGES
 
-![Image 1](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/.github/ss-1.png)
+![Image 1](https://raw.githubusercontent.com/atakanhr/Laravel-UrlShorter/refs/heads/master/.github/ss-1.png)
 
 ---
