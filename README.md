@@ -95,14 +95,6 @@ To use the Docker setup, extract the `auto-deployment` folder from the project a
 
 ## IMAGES
 
-![Image 1](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image1.PNG)
-![Image 2](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image2.PNG)
-![Image 3](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/urlshorter/github/images/image3.PNG)
-
----
-
-## THANK YOU
-
-Special thanks to [EMİR (CSS)](https://github.com/emirkivrak) for their contributions.
+![Image 1](https://raw.githubusercontent.com/atakanhr/webdev-simpleprojects/master/.github/ss-1.png)
 
 ---
