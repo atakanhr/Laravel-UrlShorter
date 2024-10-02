@@ -11,15 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
-Route::get('/anasayfa','App@index');
-Route::get('/hakkimizda','App@hakkimizda');
-Route::get('/ornek','Ornek');
-Route::get('/iletisim','Ornek@iletisim');
-Route::get('kullanici/{id}', 'Ornek@kullanici');
-Route::resource('photos', 'PhotoController'); 
-Route::get('/shorter','ShortController@index');
-Route::post('/shorter/make', 'LinkController@make')->name('make');
-Route::get('/shorter/{code}', 'LinkController@get');
+Route::get('/', 'ShortController@index');
+Route::post('/make', 'LinkController@make')->name('make');
+Route::get('/{code}', 'LinkController@get');
